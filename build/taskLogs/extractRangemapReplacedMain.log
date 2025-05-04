@@ -1,0 +1,9 @@
+Symbol range map extraction starting
+Processing 7 files
+processing com\example\movement\ClientProxy.java
+processing com\example\movement\CommonProxy.java
+processing com\example\movement\MovementMod.java
+processing com\example\movement\handlers\GUIHandler.java
+processing com\example\movement\handlers\KeyHandler.java
+processing com\example\movement\handlers\MovementHandler.java
+processing com\example\movement\utils\AntiCheatHelper.java

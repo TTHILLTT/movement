@@ -1,0 +1,524 @@
+Symbol range map extraction starting
+Processing 7 files
+processing com\example\movement\ClientProxy.java
+@|com\example\movement\ClientProxy.java|8|28|com.example.movement|package|com.example.movement|(file)
+Class Start: com.example.movement.ClientProxy
+   Method Start: displayGUI()V
+      @|com\example\movement\ClientProxy.java|197|207|displayGUI|method|com.example.movement.CommonProxy|displayGUI|()V
+      @|com\example\movement\ClientProxy.java|220|229|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\example\movement\ClientProxy.java|230|242|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\example\movement\ClientProxy.java|245|261|displayGuiScreen|method|net.minecraft.client.Minecraft|displayGuiScreen|(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|com\example\movement\ClientProxy.java|279|308|GUIHandler.MovementControlGUI|class|com.example.movement.handlers.GUIHandler.MovementControlGUI
+   Method End: displayGUI()V
+Class End  : com.example.movement.ClientProxy
+endProcessing com\example\movement\ClientProxy.java
+
+processing com\example\movement\CommonProxy.java
+@|com\example\movement\CommonProxy.java|8|28|com.example.movement|package|com.example.movement|(file)
+Class Start: com.example.movement.CommonProxy
+   Method Start: displayGUI()V
+      @|com\example\movement\CommonProxy.java|113|123|displayGUI|method|com.example.movement.CommonProxy|displayGUI|()V
+   Method End: displayGUI()V
+Class End  : com.example.movement.CommonProxy
+endProcessing com\example\movement\CommonProxy.java
+
+processing com\example\movement\MovementMod.java
+@|com\example\movement\MovementMod.java|8|28|com.example.movement|package|com.example.movement|(file)
+Class Start: com.example.movement.MovementMod
+   @|com\example\movement\MovementMod.java|804|810|String|class|java.lang.String
+   @|com\example\movement\MovementMod.java|811|816|MODID|field|com.example.movement.MovementMod|MODID|
+   @|com\example\movement\MovementMod.java|855|861|String|class|java.lang.String
+   @|com\example\movement\MovementMod.java|862|866|NAME|field|com.example.movement.MovementMod|NAME|
+   @|com\example\movement\MovementMod.java|909|915|String|class|java.lang.String
+   @|com\example\movement\MovementMod.java|916|923|VERSION|field|com.example.movement.MovementMod|VERSION|
+   @|com\example\movement\MovementMod.java|956|969|Configuration|class|net.minecraftforge.common.config.Configuration
+   @|com\example\movement\MovementMod.java|970|976|config|field|com.example.movement.MovementMod|config|
+   @|com\example\movement\MovementMod.java|1021|1033|speedEnabled|field|com.example.movement.MovementMod|speedEnabled|
+   @|com\example\movement\MovementMod.java|1069|1084|longJumpEnabled|field|com.example.movement.MovementMod|longJumpEnabled|
+   @|com\example\movement\MovementMod.java|1120|1130|flyEnabled|field|com.example.movement.MovementMod|flyEnabled|
+   @|com\example\movement\MovementMod.java|1166|1180|airJumpEnabled|field|com.example.movement.MovementMod|airJumpEnabled|
+   @|com\example\movement\MovementMod.java|1231|1246|speedMultiplier|field|com.example.movement.MovementMod|speedMultiplier|
+   @|com\example\movement\MovementMod.java|1280|1289|jumpBoost|field|com.example.movement.MovementMod|jumpBoost|
+   @|com\example\movement\MovementMod.java|1319|1330|maxAirJumps|field|com.example.movement.MovementMod|maxAirJumps|
+   Method Start: syncConfig()V
+      @|com\example\movement\MovementMod.java|1360|1370|syncConfig|method|com.example.movement.MovementMod|syncConfig|()V
+      @|com\example\movement\MovementMod.java|1383|1395|speedEnabled|field|com.example.movement.MovementMod|speedEnabled
+      @|com\example\movement\MovementMod.java|1398|1404|config|field|com.example.movement.MovementMod|config
+      @|com\example\movement\MovementMod.java|1405|1415|getBoolean|method|net.minecraftforge.common.config.Configuration|getBoolean|(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)Z
+      @|com\example\movement\MovementMod.java|1468|1483|longJumpEnabled|field|com.example.movement.MovementMod|longJumpEnabled
+      @|com\example\movement\MovementMod.java|1486|1492|config|field|com.example.movement.MovementMod|config
+      @|com\example\movement\MovementMod.java|1493|1503|getBoolean|method|net.minecraftforge.common.config.Configuration|getBoolean|(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)Z
+      @|com\example\movement\MovementMod.java|1563|1573|flyEnabled|field|com.example.movement.MovementMod|flyEnabled
+      @|com\example\movement\MovementMod.java|1576|1582|config|field|com.example.movement.MovementMod|config
+      @|com\example\movement\MovementMod.java|1583|1593|getBoolean|method|net.minecraftforge.common.config.Configuration|getBoolean|(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)Z
+      @|com\example\movement\MovementMod.java|1642|1656|airJumpEnabled|field|com.example.movement.MovementMod|airJumpEnabled
+      @|com\example\movement\MovementMod.java|1659|1665|config|field|com.example.movement.MovementMod|config
+      @|com\example\movement\MovementMod.java|1666|1676|getBoolean|method|net.minecraftforge.common.config.Configuration|getBoolean|(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)Z
+      @|com\example\movement\MovementMod.java|1743|1758|speedMultiplier|field|com.example.movement.MovementMod|speedMultiplier
+      @|com\example\movement\MovementMod.java|1761|1767|config|field|com.example.movement.MovementMod|config
+      @|com\example\movement\MovementMod.java|1768|1776|getFloat|method|net.minecraftforge.common.config.Configuration|getFloat|(Ljava/lang/String;Ljava/lang/String;FFFLjava/lang/String;)F
+      @|com\example\movement\MovementMod.java|1853|1862|jumpBoost|field|com.example.movement.MovementMod|jumpBoost
+      @|com\example\movement\MovementMod.java|1865|1871|config|field|com.example.movement.MovementMod|config
+      @|com\example\movement\MovementMod.java|1872|1880|getFloat|method|net.minecraftforge.common.config.Configuration|getFloat|(Ljava/lang/String;Ljava/lang/String;FFFLjava/lang/String;)F
+      @|com\example\movement\MovementMod.java|1956|1967|maxAirJumps|field|com.example.movement.MovementMod|maxAirJumps
+      @|com\example\movement\MovementMod.java|1970|1976|config|field|com.example.movement.MovementMod|config
+      @|com\example\movement\MovementMod.java|1977|1983|getInt|method|net.minecraftforge.common.config.Configuration|getInt|(Ljava/lang/String;Ljava/lang/String;IIILjava/lang/String;)I
+   Method End: syncConfig()V
+   Method Start: onConfigChanged()V
+      @|com\example\movement\MovementMod.java|2093|2108|onConfigChanged|method|com.example.movement.MovementMod|onConfigChanged|()V
+      @|com\example\movement\MovementMod.java|2121|2131|syncConfig|method|com.example.movement.MovementMod|syncConfig|()V
+      @|com\example\movement\MovementMod.java|2143|2154|MovementMod|class|com.example.movement.MovementMod
+      @|com\example\movement\MovementMod.java|2155|2170|onConfigChanged|method|com.example.movement.MovementMod|onConfigChanged|()V
+   Method End: onConfigChanged()V
+   Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\example\movement\MovementMod.java|2214|2221|preInit|method|com.example.movement.MovementMod|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\example\movement\MovementMod.java|2222|2247|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+      @|com\example\movement\MovementMod.java|2248|2253|event|param|com.example.movement.MovementMod|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com\example\movement\MovementMod.java|2265|2271|config|field|com.example.movement.MovementMod|config
+      @|com\example\movement\MovementMod.java|2278|2291|Configuration|class|net.minecraftforge.common.config.Configuration
+      @|com\example\movement\MovementMod.java|2292|2297|event|param|com.example.movement.MovementMod|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com\example\movement\MovementMod.java|2298|2327|getSuggestedConfigurationFile|method|net.minecraftforge.fml.common.event.FMLPreInitializationEvent|getSuggestedConfigurationFile|()Ljava/io/File;
+      @|com\example\movement\MovementMod.java|2340|2350|loadConfig|method|com.example.movement.MovementMod|loadConfig|()V
+   Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+   Method Start: loadConfig()V
+      @|com\example\movement\MovementMod.java|2378|2388|loadConfig|method|com.example.movement.MovementMod|loadConfig|()V
+      @|com\example\movement\MovementMod.java|2401|2413|speedEnabled|field|com.example.movement.MovementMod|speedEnabled
+      @|com\example\movement\MovementMod.java|2416|2422|config|field|com.example.movement.MovementMod|config
+      @|com\example\movement\MovementMod.java|2423|2433|getBoolean|method|net.minecraftforge.common.config.Configuration|getBoolean|(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)Z
+      @|com\example\movement\MovementMod.java|2486|2501|longJumpEnabled|field|com.example.movement.MovementMod|longJumpEnabled
+      @|com\example\movement\MovementMod.java|2504|2510|config|field|com.example.movement.MovementMod|config
+      @|com\example\movement\MovementMod.java|2511|2521|getBoolean|method|net.minecraftforge.common.config.Configuration|getBoolean|(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)Z
+      @|com\example\movement\MovementMod.java|2581|2591|flyEnabled|field|com.example.movement.MovementMod|flyEnabled
+      @|com\example\movement\MovementMod.java|2594|2600|config|field|com.example.movement.MovementMod|config
+      @|com\example\movement\MovementMod.java|2601|2611|getBoolean|method|net.minecraftforge.common.config.Configuration|getBoolean|(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)Z
+      @|com\example\movement\MovementMod.java|2660|2674|airJumpEnabled|field|com.example.movement.MovementMod|airJumpEnabled
+      @|com\example\movement\MovementMod.java|2677|2683|config|field|com.example.movement.MovementMod|config
+      @|com\example\movement\MovementMod.java|2684|2694|getBoolean|method|net.minecraftforge.common.config.Configuration|getBoolean|(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)Z
+      @|com\example\movement\MovementMod.java|2761|2776|speedMultiplier|field|com.example.movement.MovementMod|speedMultiplier
+      @|com\example\movement\MovementMod.java|2779|2785|config|field|com.example.movement.MovementMod|config
+      @|com\example\movement\MovementMod.java|2786|2794|getFloat|method|net.minecraftforge.common.config.Configuration|getFloat|(Ljava/lang/String;Ljava/lang/String;FFFLjava/lang/String;)F
+      @|com\example\movement\MovementMod.java|2871|2880|jumpBoost|field|com.example.movement.MovementMod|jumpBoost
+      @|com\example\movement\MovementMod.java|2883|2889|config|field|com.example.movement.MovementMod|config
+      @|com\example\movement\MovementMod.java|2890|2898|getFloat|method|net.minecraftforge.common.config.Configuration|getFloat|(Ljava/lang/String;Ljava/lang/String;FFFLjava/lang/String;)F
+      @|com\example\movement\MovementMod.java|2974|2985|maxAirJumps|field|com.example.movement.MovementMod|maxAirJumps
+      @|com\example\movement\MovementMod.java|2988|2994|config|field|com.example.movement.MovementMod|config
+      @|com\example\movement\MovementMod.java|2995|3001|getInt|method|net.minecraftforge.common.config.Configuration|getInt|(Ljava/lang/String;Ljava/lang/String;IIILjava/lang/String;)I
+      @|com\example\movement\MovementMod.java|3083|3089|config|field|com.example.movement.MovementMod|config
+      @|com\example\movement\MovementMod.java|3090|3100|hasChanged|method|net.minecraftforge.common.config.Configuration|hasChanged|()Z
+      @|com\example\movement\MovementMod.java|3104|3115|MovementMod|class|com.example.movement.MovementMod
+      @|com\example\movement\MovementMod.java|3116|3131|onConfigChanged|method|com.example.movement.MovementMod|onConfigChanged|()V
+   Method End: loadConfig()V
+   @|com\example\movement\MovementMod.java|3309|3320|CommonProxy|class|com.example.movement.CommonProxy
+   @|com\example\movement\MovementMod.java|3321|3326|proxy|field|com.example.movement.MovementMod|proxy|
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\example\movement\MovementMod.java|3367|3371|init|method|com.example.movement.MovementMod|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\example\movement\MovementMod.java|3372|3394|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|com\example\movement\MovementMod.java|3395|3400|event|param|com.example.movement.MovementMod|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com\example\movement\MovementMod.java|3412|3426|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com\example\movement\MovementMod.java|3427|3436|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com\example\movement\MovementMod.java|3437|3445|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com\example\movement\MovementMod.java|3450|3465|MovementHandler|class|com.example.movement.handlers.MovementHandler
+      @|com\example\movement\MovementMod.java|3478|3492|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com\example\movement\MovementMod.java|3493|3502|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com\example\movement\MovementMod.java|3503|3511|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com\example\movement\MovementMod.java|3516|3526|GUIHandler|class|com.example.movement.handlers.GUIHandler
+      @|com\example\movement\MovementMod.java|3539|3553|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com\example\movement\MovementMod.java|3554|3563|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com\example\movement\MovementMod.java|3564|3572|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com\example\movement\MovementMod.java|3577|3587|KeyHandler|class|com.example.movement.handlers.KeyHandler
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+Class End  : com.example.movement.MovementMod
+endProcessing com\example\movement\MovementMod.java
+
+processing com\example\movement\handlers\GUIHandler.java
+@|com\example\movement\handlers\GUIHandler.java|8|37|com.example.movement.handlers|package|com.example.movement.handlers|(file)
+Class Start: com.example.movement.handlers.GUIHandler
+   Class Start: com.example.movement.handlers.GUIHandler.MovementConfigGUI
+      Method Start: MovementConfigGUI(Lnet/minecraft/client/gui/GuiScreen;)V
+         @|com\example\movement\handlers\GUIHandler.java|617|634|MovementConfigGUI|method|com.example.movement.handlers.GUIHandler.MovementConfigGUI|MovementConfigGUI|(Lnet/minecraft/client/gui/GuiScreen;)V
+         @|com\example\movement\handlers\GUIHandler.java|635|644|GuiScreen|class|net.minecraft.client.gui.GuiScreen
+         @|com\example\movement\handlers\GUIHandler.java|645|651|parent|param|com.example.movement.handlers.GUIHandler.MovementConfigGUI|MovementConfigGUI|(Lnet/minecraft/client/gui/GuiScreen;)V|parent|0
+         @|com\example\movement\handlers\GUIHandler.java|673|679|parent|param|com.example.movement.handlers.GUIHandler.MovementConfigGUI|MovementConfigGUI|(Lnet/minecraft/client/gui/GuiScreen;)V|parent|0
+         @|com\example\movement\handlers\GUIHandler.java|701|714|ConfigElement|class|net.minecraftforge.common.config.ConfigElement
+         @|com\example\movement\handlers\GUIHandler.java|715|726|MovementMod|class|com.example.movement.MovementMod
+         @|com\example\movement\handlers\GUIHandler.java|727|733|config|field|com.example.movement.MovementMod|config
+         @|com\example\movement\handlers\GUIHandler.java|734|745|getCategory|method|net.minecraftforge.common.config.Configuration|getCategory|(Ljava/lang/String;)Lnet/minecraftforge/common/config/ConfigCategory;
+         @|com\example\movement\handlers\GUIHandler.java|758|774|getChildElements|method|net.minecraftforge.fml.client.config.IConfigElement|getChildElements|()Ljava/util/List;
+      Method End: MovementConfigGUI(Lnet/minecraft/client/gui/GuiScreen;)V
+   Class End  : com.example.movement.handlers.GUIHandler.MovementConfigGUI
+   Class Start: com.example.movement.handlers.GUIHandler.MovementControlGUI
+      @|com\example\movement\handlers\GUIHandler.java|1013|1026|speedButtonX1|field|com.example.movement.handlers.GUIHandler.MovementControlGUI|speedButtonX1|
+      @|com\example\movement\handlers\GUIHandler.java|1034|1047|speedButtonY1|field|com.example.movement.handlers.GUIHandler.MovementControlGUI|speedButtonY1|
+      @|com\example\movement\handlers\GUIHandler.java|1054|1067|speedButtonX2|field|com.example.movement.handlers.GUIHandler.MovementControlGUI|speedButtonX2|
+      @|com\example\movement\handlers\GUIHandler.java|1075|1088|speedButtonY2|field|com.example.movement.handlers.GUIHandler.MovementControlGUI|speedButtonY2|
+      Method Start: mouseClicked(III)V
+         @|com\example\movement\handlers\GUIHandler.java|1118|1130|mouseClicked|method|net.minecraft.client.gui.GuiScreen|mouseClicked|(III)V
+         @|com\example\movement\handlers\GUIHandler.java|1135|1141|mouseX|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|mouseClicked|(III)V|mouseX|0
+         @|com\example\movement\handlers\GUIHandler.java|1147|1153|mouseY|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|mouseClicked|(III)V|mouseY|1
+         @|com\example\movement\handlers\GUIHandler.java|1159|1170|mouseButton|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|mouseClicked|(III)V|mouseButton|2
+         @|com\example\movement\handlers\GUIHandler.java|1214|1226|mouseClicked|method|net.minecraft.client.gui.GuiScreen|mouseClicked|(III)V
+         @|com\example\movement\handlers\GUIHandler.java|1227|1233|mouseX|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|mouseClicked|(III)V|mouseX|0
+         @|com\example\movement\handlers\GUIHandler.java|1235|1241|mouseY|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|mouseClicked|(III)V|mouseY|1
+         @|com\example\movement\handlers\GUIHandler.java|1243|1254|mouseButton|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|mouseClicked|(III)V|mouseButton|2
+         @|com\example\movement\handlers\GUIHandler.java|1283|1294|MovementMod|class|com.example.movement.MovementMod
+         @|com\example\movement\handlers\GUIHandler.java|1295|1307|speedEnabled|field|com.example.movement.MovementMod|speedEnabled
+         @|com\example\movement\handlers\GUIHandler.java|1311|1322|MovementMod|class|com.example.movement.MovementMod
+         @|com\example\movement\handlers\GUIHandler.java|1323|1335|speedEnabled|field|com.example.movement.MovementMod|speedEnabled
+         @|com\example\movement\handlers\GUIHandler.java|1381|1392|MovementMod|class|com.example.movement.MovementMod
+         @|com\example\movement\handlers\GUIHandler.java|1393|1399|config|field|com.example.movement.MovementMod|config
+         @|com\example\movement\handlers\GUIHandler.java|1400|1403|get|method|net.minecraftforge.common.config.Configuration|get|(Ljava/lang/String;Ljava/lang/String;Z)Lnet/minecraftforge/common/config/Property;
+         @|com\example\movement\handlers\GUIHandler.java|1431|1434|set|method|net.minecraftforge.common.config.Property|set|(Z)V
+         @|com\example\movement\handlers\GUIHandler.java|1435|1446|MovementMod|class|com.example.movement.MovementMod
+         @|com\example\movement\handlers\GUIHandler.java|1447|1459|speedEnabled|field|com.example.movement.MovementMod|speedEnabled
+         @|com\example\movement\handlers\GUIHandler.java|1478|1489|MovementMod|class|com.example.movement.MovementMod
+         @|com\example\movement\handlers\GUIHandler.java|1490|1496|config|field|com.example.movement.MovementMod|config
+         @|com\example\movement\handlers\GUIHandler.java|1497|1501|save|method|net.minecraftforge.common.config.Configuration|save|()V
+         @|com\example\movement\handlers\GUIHandler.java|1521|1530|Minecraft|class|net.minecraft.client.Minecraft
+         @|com\example\movement\handlers\GUIHandler.java|1531|1543|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+         @|com\example\movement\handlers\GUIHandler.java|1546|1561|getSoundHandler|method|net.minecraft.client.Minecraft|getSoundHandler|()Lnet/minecraft/client/audio/SoundHandler;
+         @|com\example\movement\handlers\GUIHandler.java|1564|1573|playSound|method|net.minecraft.client.audio.SoundHandler|playSound|(Lnet/minecraft/client/audio/ISound;)V
+         @|com\example\movement\handlers\GUIHandler.java|1595|1616|PositionedSoundRecord|class|net.minecraft.client.audio.PositionedSoundRecord
+         @|com\example\movement\handlers\GUIHandler.java|1617|1623|create|method|net.minecraft.client.audio.PositionedSoundRecord|create|(Lnet/minecraft/util/ResourceLocation;F)Lnet/minecraft/client/audio/PositionedSoundRecord;
+         @|com\example\movement\handlers\GUIHandler.java|1628|1644|ResourceLocation|class|net.minecraft.util.ResourceLocation
+         @|com\example\movement\handlers\GUIHandler.java|1712|1723|IOException|class|java.io.IOException
+         @|com\example\movement\handlers\GUIHandler.java|1747|1762|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+      Method End: mouseClicked(III)V
+      Method Start: drawScreen(IIF)V
+         @|com\example\movement\handlers\GUIHandler.java|1874|1884|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+         @|com\example\movement\handlers\GUIHandler.java|1889|1895|mouseX|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawScreen|(IIF)V|mouseX|0
+         @|com\example\movement\handlers\GUIHandler.java|1901|1907|mouseY|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawScreen|(IIF)V|mouseY|1
+         @|com\example\movement\handlers\GUIHandler.java|1915|1927|partialTicks|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawScreen|(IIF)V|partialTicks|2
+         @|com\example\movement\handlers\GUIHandler.java|1943|1964|drawDefaultBackground|method|net.minecraft.client.gui.GuiScreen|drawDefaultBackground|()V
+         @|com\example\movement\handlers\GUIHandler.java|1980|1988|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+         @|com\example\movement\handlers\GUIHandler.java|1989|2002|speedButtonX1|field|com.example.movement.handlers.GUIHandler.MovementControlGUI|speedButtonX1
+         @|com\example\movement\handlers\GUIHandler.java|2004|2017|speedButtonY1|field|com.example.movement.handlers.GUIHandler.MovementControlGUI|speedButtonY1
+         @|com\example\movement\handlers\GUIHandler.java|2019|2032|speedButtonX2|field|com.example.movement.handlers.GUIHandler.MovementControlGUI|speedButtonX2
+         @|com\example\movement\handlers\GUIHandler.java|2034|2047|speedButtonY2|field|com.example.movement.handlers.GUIHandler.MovementControlGUI|speedButtonY2
+         @|com\example\movement\handlers\GUIHandler.java|2070|2081|MovementMod|class|com.example.movement.MovementMod
+         @|com\example\movement\handlers\GUIHandler.java|2082|2094|speedEnabled|field|com.example.movement.MovementMod|speedEnabled
+         @|com\example\movement\handlers\GUIHandler.java|2159|2165|String|class|java.lang.String
+         @|com\example\movement\handlers\GUIHandler.java|2175|2186|MovementMod|class|com.example.movement.MovementMod
+         @|com\example\movement\handlers\GUIHandler.java|2187|2199|speedEnabled|field|com.example.movement.MovementMod|speedEnabled
+         @|com\example\movement\handlers\GUIHandler.java|2244|2259|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+         @|com\example\movement\handlers\GUIHandler.java|2260|2274|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+         @|com\example\movement\handlers\GUIHandler.java|2296|2311|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+         @|com\example\movement\handlers\GUIHandler.java|2312|2322|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+         @|com\example\movement\handlers\GUIHandler.java|2348|2361|speedButtonX1|field|com.example.movement.handlers.GUIHandler.MovementControlGUI|speedButtonX1
+         @|com\example\movement\handlers\GUIHandler.java|2365|2378|speedButtonX2|field|com.example.movement.handlers.GUIHandler.MovementControlGUI|speedButtonX2
+         @|com\example\movement\handlers\GUIHandler.java|2381|2394|speedButtonX1|field|com.example.movement.handlers.GUIHandler.MovementControlGUI|speedButtonX1
+         @|com\example\movement\handlers\GUIHandler.java|2428|2441|speedButtonY1|field|com.example.movement.handlers.GUIHandler.MovementControlGUI|speedButtonY1
+         @|com\example\movement\handlers\GUIHandler.java|2509|2519|drawButton|method|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawButton|(IILjava/lang/String;)V
+         @|com\example\movement\handlers\GUIHandler.java|2540|2551|MovementMod|class|com.example.movement.MovementMod
+         @|com\example\movement\handlers\GUIHandler.java|2552|2564|speedEnabled|field|com.example.movement.MovementMod|speedEnabled
+         @|com\example\movement\handlers\GUIHandler.java|2579|2589|drawButton|method|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawButton|(IILjava/lang/String;)V
+         @|com\example\movement\handlers\GUIHandler.java|2613|2624|MovementMod|class|com.example.movement.MovementMod
+         @|com\example\movement\handlers\GUIHandler.java|2625|2640|longJumpEnabled|field|com.example.movement.MovementMod|longJumpEnabled
+         @|com\example\movement\handlers\GUIHandler.java|2655|2665|drawButton|method|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawButton|(IILjava/lang/String;)V
+         @|com\example\movement\handlers\GUIHandler.java|2684|2695|MovementMod|class|com.example.movement.MovementMod
+         @|com\example\movement\handlers\GUIHandler.java|2696|2706|flyEnabled|field|com.example.movement.MovementMod|flyEnabled
+         @|com\example\movement\handlers\GUIHandler.java|2721|2731|drawButton|method|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawButton|(IILjava/lang/String;)V
+         @|com\example\movement\handlers\GUIHandler.java|2755|2766|MovementMod|class|com.example.movement.MovementMod
+         @|com\example\movement\handlers\GUIHandler.java|2767|2781|airJumpEnabled|field|com.example.movement.MovementMod|airJumpEnabled
+         @|com\example\movement\handlers\GUIHandler.java|2830|2840|drawSlider|method|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawSlider|(IILjava/lang/String;FFF)V
+         @|com\example\movement\handlers\GUIHandler.java|2870|2881|MovementMod|class|com.example.movement.MovementMod
+         @|com\example\movement\handlers\GUIHandler.java|2882|2897|speedMultiplier|field|com.example.movement.MovementMod|speedMultiplier
+         @|com\example\movement\handlers\GUIHandler.java|2924|2934|drawSlider|method|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawSlider|(IILjava/lang/String;FFF)V
+         @|com\example\movement\handlers\GUIHandler.java|2966|2977|MovementMod|class|com.example.movement.MovementMod
+         @|com\example\movement\handlers\GUIHandler.java|2978|2987|jumpBoost|field|com.example.movement.MovementMod|jumpBoost
+         @|com\example\movement\handlers\GUIHandler.java|3033|3043|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+         @|com\example\movement\handlers\GUIHandler.java|3044|3050|mouseX|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawScreen|(IIF)V|mouseX|0
+         @|com\example\movement\handlers\GUIHandler.java|3052|3058|mouseY|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawScreen|(IIF)V|mouseY|1
+         @|com\example\movement\handlers\GUIHandler.java|3060|3072|partialTicks|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawScreen|(IIF)V|partialTicks|2
+      Method End: drawScreen(IIF)V
+      Method Start: drawButton(IILjava/lang/String;)V
+         @|com\example\movement\handlers\GUIHandler.java|3107|3117|drawButton|method|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawButton|(IILjava/lang/String;)V
+         @|com\example\movement\handlers\GUIHandler.java|3122|3123|x|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawButton|(IILjava/lang/String;)V|x|0
+         @|com\example\movement\handlers\GUIHandler.java|3129|3130|y|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawButton|(IILjava/lang/String;)V|y|1
+         @|com\example\movement\handlers\GUIHandler.java|3132|3138|String|class|java.lang.String
+         @|com\example\movement\handlers\GUIHandler.java|3139|3143|text|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawButton|(IILjava/lang/String;)V|text|2
+         @|com\example\movement\handlers\GUIHandler.java|3217|3225|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+         @|com\example\movement\handlers\GUIHandler.java|3226|3227|x|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawButton|(IILjava/lang/String;)V|x|0
+         @|com\example\movement\handlers\GUIHandler.java|3229|3230|y|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawButton|(IILjava/lang/String;)V|y|1
+         @|com\example\movement\handlers\GUIHandler.java|3232|3233|x|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawButton|(IILjava/lang/String;)V|x|0
+         @|com\example\movement\handlers\GUIHandler.java|3243|3244|y|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawButton|(IILjava/lang/String;)V|y|1
+         @|com\example\movement\handlers\GUIHandler.java|3280|3295|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+         @|com\example\movement\handlers\GUIHandler.java|3296|3306|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+         @|com\example\movement\handlers\GUIHandler.java|3307|3311|text|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawButton|(IILjava/lang/String;)V|text|2
+         @|com\example\movement\handlers\GUIHandler.java|3313|3314|x|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawButton|(IILjava/lang/String;)V|x|0
+         @|com\example\movement\handlers\GUIHandler.java|3320|3321|y|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawButton|(IILjava/lang/String;)V|y|1
+      Method End: drawButton(IILjava/lang/String;)V
+      Method Start: drawSlider(IILjava/lang/String;FFF)V
+         @|com\example\movement\handlers\GUIHandler.java|3370|3380|drawSlider|method|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawSlider|(IILjava/lang/String;FFF)V
+         @|com\example\movement\handlers\GUIHandler.java|3385|3386|x|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawSlider|(IILjava/lang/String;FFF)V|x|0
+         @|com\example\movement\handlers\GUIHandler.java|3392|3393|y|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawSlider|(IILjava/lang/String;FFF)V|y|1
+         @|com\example\movement\handlers\GUIHandler.java|3395|3401|String|class|java.lang.String
+         @|com\example\movement\handlers\GUIHandler.java|3402|3407|label|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawSlider|(IILjava/lang/String;FFF)V|label|2
+         @|com\example\movement\handlers\GUIHandler.java|3415|3420|value|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawSlider|(IILjava/lang/String;FFF)V|value|3
+         @|com\example\movement\handlers\GUIHandler.java|3428|3431|min|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawSlider|(IILjava/lang/String;FFF)V|min|4
+         @|com\example\movement\handlers\GUIHandler.java|3439|3442|max|param|com.example.movement.handlers.GUIHandler.MovementControlGUI|drawSlider|(IILjava/lang/String;FFF)V|max|5
+      Method End: drawSlider(IILjava/lang/String;FFF)V
+   Class End  : com.example.movement.handlers.GUIHandler.MovementControlGUI
+Class End  : com.example.movement.handlers.GUIHandler
+endProcessing com\example\movement\handlers\GUIHandler.java
+
+processing com\example\movement\handlers\KeyHandler.java
+@|com\example\movement\handlers\KeyHandler.java|8|37|com.example.movement.handlers|package|com.example.movement.handlers|(file)
+Class Start: com.example.movement.handlers.KeyHandler
+   @|com\example\movement\handlers\KeyHandler.java|720|735|MovementHandler|class|com.example.movement.handlers.MovementHandler
+   @|com\example\movement\handlers\KeyHandler.java|736|751|movementHandler|field|com.example.movement.handlers.KeyHandler|movementHandler|
+   @|com\example\movement\handlers\KeyHandler.java|758|773|MovementHandler|class|com.example.movement.handlers.MovementHandler
+   @|com\example\movement\handlers\KeyHandler.java|809|819|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\example\movement\handlers\KeyHandler.java|820|827|openGUI|field|com.example.movement.handlers.KeyHandler|openGUI|
+   @|com\example\movement\handlers\KeyHandler.java|834|844|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\example\movement\handlers\KeyHandler.java|862|870|Keyboard|class|org.lwjgl.input.Keyboard
+   @|com\example\movement\handlers\KeyHandler.java|871|881|KEY_RSHIFT|field|org.lwjgl.input.Keyboard|KEY_RSHIFT
+   @|com\example\movement\handlers\KeyHandler.java|918|928|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\example\movement\handlers\KeyHandler.java|929|939|airJumpKey|field|com.example.movement.handlers.KeyHandler|airJumpKey|
+   @|com\example\movement\handlers\KeyHandler.java|946|956|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\example\movement\handlers\KeyHandler.java|969|977|Keyboard|class|org.lwjgl.input.Keyboard
+   @|com\example\movement\handlers\KeyHandler.java|978|987|KEY_SPACE|field|org.lwjgl.input.Keyboard|KEY_SPACE
+   @|com\example\movement\handlers\KeyHandler.java|1040|1053|JUMP_COOLDOWN|field|com.example.movement.handlers.KeyHandler|JUMP_COOLDOWN|
+   @|com\example\movement\handlers\KeyHandler.java|1094|1103|jumpTimer|field|com.example.movement.handlers.KeyHandler|jumpTimer|
+   Method Start: KeyHandler()V
+      @|com\example\movement\handlers\KeyHandler.java|1125|1135|KeyHandler|method|com.example.movement.handlers.KeyHandler|KeyHandler|()V
+      @|com\example\movement\handlers\KeyHandler.java|1164|1178|ClientRegistry|class|net.minecraftforge.fml.client.registry.ClientRegistry
+      @|com\example\movement\handlers\KeyHandler.java|1179|1197|registerKeyBinding|method|net.minecraftforge.fml.client.registry.ClientRegistry|registerKeyBinding|(Lnet/minecraft/client/settings/KeyBinding;)V
+      @|com\example\movement\handlers\KeyHandler.java|1198|1205|openGUI|field|com.example.movement.handlers.KeyHandler|openGUI
+      @|com\example\movement\handlers\KeyHandler.java|1216|1230|ClientRegistry|class|net.minecraftforge.fml.client.registry.ClientRegistry
+      @|com\example\movement\handlers\KeyHandler.java|1231|1249|registerKeyBinding|method|net.minecraftforge.fml.client.registry.ClientRegistry|registerKeyBinding|(Lnet/minecraft/client/settings/KeyBinding;)V
+      @|com\example\movement\handlers\KeyHandler.java|1250|1260|airJumpKey|field|com.example.movement.handlers.KeyHandler|airJumpKey
+   Method End: KeyHandler()V
+   Method Start: onKeyInput(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+      @|com\example\movement\handlers\KeyHandler.java|1306|1316|onKeyInput|method|com.example.movement.handlers.KeyHandler|onKeyInput|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+      @|com\example\movement\handlers\KeyHandler.java|1317|1341|InputEvent.KeyInputEvent|class|net.minecraftforge.fml.common.gameevent.InputEvent.KeyInputEvent
+      @|com\example\movement\handlers\KeyHandler.java|1342|1347|event|param|com.example.movement.handlers.KeyHandler|onKeyInput|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V|event|0
+      @|com\example\movement\handlers\KeyHandler.java|1377|1389|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\example\movement\handlers\KeyHandler.java|1399|1408|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\example\movement\handlers\KeyHandler.java|1409|1421|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\example\movement\handlers\KeyHandler.java|1424|1433|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|com\example\movement\handlers\KeyHandler.java|1469|1484|movementHandler|field|com.example.movement.handlers.KeyHandler|movementHandler
+      @|com\example\movement\handlers\KeyHandler.java|1485|1498|handleAirJump|method|com.example.movement.handlers.MovementHandler|handleAirJump|(Lnet/minecraft/entity/player/EntityPlayer;)V
+      @|com\example\movement\handlers\KeyHandler.java|1568|1575|openGUI|field|com.example.movement.handlers.KeyHandler|openGUI
+      @|com\example\movement\handlers\KeyHandler.java|1576|1585|isPressed|method|net.minecraft.client.settings.KeyBinding|isPressed|()Z
+      @|com\example\movement\handlers\KeyHandler.java|1603|1614|MovementMod|class|com.example.movement.MovementMod
+      @|com\example\movement\handlers\KeyHandler.java|1615|1620|proxy|field|com.example.movement.MovementMod|proxy
+      @|com\example\movement\handlers\KeyHandler.java|1621|1631|displayGUI|method|com.example.movement.CommonProxy|displayGUI|()V
+      @|com\example\movement\handlers\KeyHandler.java|1657|1665|Keyboard|class|org.lwjgl.input.Keyboard
+      @|com\example\movement\handlers\KeyHandler.java|1666|1675|isKeyDown|method|org.lwjgl.input.Keyboard|isKeyDown|(I)Z
+      @|com\example\movement\handlers\KeyHandler.java|1676|1686|airJumpKey|field|com.example.movement.handlers.KeyHandler|airJumpKey
+      @|com\example\movement\handlers\KeyHandler.java|1687|1697|getKeyCode|method|net.minecraft.client.settings.KeyBinding|getKeyCode|()I
+      @|com\example\movement\handlers\KeyHandler.java|1725|1734|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\example\movement\handlers\KeyHandler.java|1735|1747|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\example\movement\handlers\KeyHandler.java|1750|1759|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|com\example\movement\handlers\KeyHandler.java|1773|1788|movementHandler|field|com.example.movement.handlers.KeyHandler|movementHandler
+      @|com\example\movement\handlers\KeyHandler.java|1789|1802|handleAirJump|method|com.example.movement.handlers.MovementHandler|handleAirJump|(Lnet/minecraft/entity/player/EntityPlayer;)V
+   Method End: onKeyInput(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+   Method Start: onPlayerTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V
+      @|com\example\movement\handlers\KeyHandler.java|1866|1878|onPlayerTick|method|com.example.movement.handlers.KeyHandler|onPlayerTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V
+      @|com\example\movement\handlers\KeyHandler.java|1879|1904|TickEvent.PlayerTickEvent|class|net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent
+      @|com\example\movement\handlers\KeyHandler.java|1905|1910|event|param|com.example.movement.handlers.KeyHandler|onPlayerTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V|event|0
+      @|com\example\movement\handlers\KeyHandler.java|1926|1931|event|param|com.example.movement.handlers.KeyHandler|onPlayerTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V|event|0
+      @|com\example\movement\handlers\KeyHandler.java|1932|1937|phase|field|net.minecraftforge.fml.common.gameevent.TickEvent|phase
+      @|com\example\movement\handlers\KeyHandler.java|1941|1956|TickEvent.Phase|class|net.minecraftforge.fml.common.gameevent.TickEvent.Phase
+      @|com\example\movement\handlers\KeyHandler.java|1957|1962|START|field|net.minecraftforge.fml.common.gameevent.TickEvent.Phase|START
+      @|com\example\movement\handlers\KeyHandler.java|1984|1995|MovementMod|class|com.example.movement.MovementMod
+      @|com\example\movement\handlers\KeyHandler.java|1996|2006|flyEnabled|field|com.example.movement.MovementMod|flyEnabled
+      @|com\example\movement\handlers\KeyHandler.java|2010|2018|Keyboard|class|org.lwjgl.input.Keyboard
+      @|com\example\movement\handlers\KeyHandler.java|2019|2028|isKeyDown|method|org.lwjgl.input.Keyboard|isKeyDown|(I)Z
+      @|com\example\movement\handlers\KeyHandler.java|2029|2037|Keyboard|class|org.lwjgl.input.Keyboard
+      @|com\example\movement\handlers\KeyHandler.java|2038|2047|KEY_SPACE|field|org.lwjgl.input.Keyboard|KEY_SPACE
+      @|com\example\movement\handlers\KeyHandler.java|2064|2073|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\example\movement\handlers\KeyHandler.java|2074|2086|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\example\movement\handlers\KeyHandler.java|2089|2098|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|com\example\movement\handlers\KeyHandler.java|2099|2106|motionY|field|net.minecraft.entity.Entity|motionY
+      @|com\example\movement\handlers\KeyHandler.java|2154|2166|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\example\movement\handlers\KeyHandler.java|2176|2185|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\example\movement\handlers\KeyHandler.java|2186|2198|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\example\movement\handlers\KeyHandler.java|2201|2210|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|com\example\movement\handlers\KeyHandler.java|2254|2269|movementHandler|field|com.example.movement.handlers.KeyHandler|movementHandler
+      @|com\example\movement\handlers\KeyHandler.java|2270|2283|handleAirJump|method|com.example.movement.handlers.MovementHandler|handleAirJump|(Lnet/minecraft/entity/player/EntityPlayer;)V
+      @|com\example\movement\handlers\KeyHandler.java|2355|2366|MovementMod|class|com.example.movement.MovementMod
+      @|com\example\movement\handlers\KeyHandler.java|2367|2381|airJumpEnabled|field|com.example.movement.MovementMod|airJumpEnabled
+      @|com\example\movement\handlers\KeyHandler.java|2385|2395|airJumpKey|field|com.example.movement.handlers.KeyHandler|airJumpKey
+      @|com\example\movement\handlers\KeyHandler.java|2396|2405|isKeyDown|method|net.minecraft.client.settings.KeyBinding|isKeyDown|()Z
+      @|com\example\movement\handlers\KeyHandler.java|2427|2436|jumpTimer|field|com.example.movement.handlers.KeyHandler|jumpTimer
+      @|com\example\movement\handlers\KeyHandler.java|2446|2451|event|param|com.example.movement.handlers.KeyHandler|onPlayerTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V|event|0
+      @|com\example\movement\handlers\KeyHandler.java|2452|2458|player|field|net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent|player
+      @|com\example\movement\handlers\KeyHandler.java|2459|2467|onGround|field|net.minecraft.entity.Entity|onGround
+      @|com\example\movement\handlers\KeyHandler.java|2515|2520|event|param|com.example.movement.handlers.KeyHandler|onPlayerTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V|event|0
+      @|com\example\movement\handlers\KeyHandler.java|2521|2527|player|field|net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent|player
+      @|com\example\movement\handlers\KeyHandler.java|2528|2535|motionY|field|net.minecraft.entity.Entity|motionY
+      @|com\example\movement\handlers\KeyHandler.java|2545|2556|MovementMod|class|com.example.movement.MovementMod
+      @|com\example\movement\handlers\KeyHandler.java|2557|2566|jumpBoost|field|com.example.movement.MovementMod|jumpBoost
+      @|com\example\movement\handlers\KeyHandler.java|2569|2584|AntiCheatHelper|class|com.example.movement.utils.AntiCheatHelper
+      @|com\example\movement\handlers\KeyHandler.java|2585|2604|getRandomizedFactor|method|com.example.movement.utils.AntiCheatHelper|getRandomizedFactor|()F
+      @|com\example\movement\handlers\KeyHandler.java|2687|2702|AntiCheatHelper|class|com.example.movement.utils.AntiCheatHelper
+      @|com\example\movement\handlers\KeyHandler.java|2703|2720|getPositionOffset|method|com.example.movement.utils.AntiCheatHelper|getPositionOffset|()[D
+      @|com\example\movement\handlers\KeyHandler.java|2740|2745|event|param|com.example.movement.handlers.KeyHandler|onPlayerTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V|event|0
+      @|com\example\movement\handlers\KeyHandler.java|2746|2752|player|field|net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent|player
+      @|com\example\movement\handlers\KeyHandler.java|2753|2764|setPosition|method|net.minecraft.entity.Entity|setPosition|(DDD)V
+      @|com\example\movement\handlers\KeyHandler.java|2786|2791|event|param|com.example.movement.handlers.KeyHandler|onPlayerTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V|event|0
+      @|com\example\movement\handlers\KeyHandler.java|2792|2798|player|field|net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent|player
+      @|com\example\movement\handlers\KeyHandler.java|2799|2803|posX|field|net.minecraft.entity.Entity|posX
+      @|com\example\movement\handlers\KeyHandler.java|2837|2842|event|param|com.example.movement.handlers.KeyHandler|onPlayerTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V|event|0
+      @|com\example\movement\handlers\KeyHandler.java|2843|2849|player|field|net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent|player
+      @|com\example\movement\handlers\KeyHandler.java|2850|2854|posY|field|net.minecraft.entity.Entity|posY
+      @|com\example\movement\handlers\KeyHandler.java|2888|2893|event|param|com.example.movement.handlers.KeyHandler|onPlayerTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V|event|0
+      @|com\example\movement\handlers\KeyHandler.java|2894|2900|player|field|net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent|player
+      @|com\example\movement\handlers\KeyHandler.java|2901|2905|posZ|field|net.minecraft.entity.Entity|posZ
+      @|com\example\movement\handlers\KeyHandler.java|2970|2979|jumpTimer|field|com.example.movement.handlers.KeyHandler|jumpTimer
+      @|com\example\movement\handlers\KeyHandler.java|2982|2995|JUMP_COOLDOWN|field|com.example.movement.handlers.KeyHandler|JUMP_COOLDOWN
+      @|com\example\movement\handlers\KeyHandler.java|3052|3061|jumpTimer|field|com.example.movement.handlers.KeyHandler|jumpTimer
+      @|com\example\movement\handlers\KeyHandler.java|3067|3076|jumpTimer|field|com.example.movement.handlers.KeyHandler|jumpTimer
+   Method End: onPlayerTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V
+Class End  : com.example.movement.handlers.KeyHandler
+endProcessing com\example\movement\handlers\KeyHandler.java
+
+processing com\example\movement\handlers\MovementHandler.java
+@|com\example\movement\handlers\MovementHandler.java|8|37|com.example.movement.handlers|package|com.example.movement.handlers|(file)
+Class Start: com.example.movement.handlers.MovementHandler
+   @|com\example\movement\handlers\MovementHandler.java|561|575|airJumpCounter|field|com.example.movement.handlers.MovementHandler|airJumpCounter|
+   @|com\example\movement\handlers\MovementHandler.java|598|610|lastJumpTime|field|com.example.movement.handlers.MovementHandler|lastJumpTime|
+   @|com\example\movement\handlers\MovementHandler.java|635|640|Field|class|java.lang.reflect.Field
+   @|com\example\movement\handlers\MovementHandler.java|641|655|jumpTicksField|field|com.example.movement.handlers.MovementHandler|jumpTicksField|
+   @|com\example\movement\handlers\MovementHandler.java|740|754|jumpTicksField|field|com.example.movement.handlers.MovementHandler|jumpTicksField
+   @|com\example\movement\handlers\MovementHandler.java|757|773|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase
+   @|com\example\movement\handlers\MovementHandler.java|780|796|getDeclaredField|method|java.lang.Class|getDeclaredField|(Ljava/lang/String;)Ljava/lang/reflect/Field;
+   @|com\example\movement\handlers\MovementHandler.java|823|837|jumpTicksField|field|com.example.movement.handlers.MovementHandler|jumpTicksField
+   @|com\example\movement\handlers\MovementHandler.java|838|851|setAccessible|method|java.lang.reflect.AccessibleObject|setAccessible|(Z)V
+   @|com\example\movement\handlers\MovementHandler.java|876|896|NoSuchFieldException|class|java.lang.NoSuchFieldException
+   @|com\example\movement\handlers\MovementHandler.java|938|944|System|class|java.lang.System
+   @|com\example\movement\handlers\MovementHandler.java|945|948|err|field|java.lang.System|err
+   @|com\example\movement\handlers\MovementHandler.java|949|956|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+   @|com\example\movement\handlers\MovementHandler.java|1015|1030|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+   @|com\example\movement\handlers\MovementHandler.java|1046|1060|jumpTicksField|field|com.example.movement.handlers.MovementHandler|jumpTicksField
+   Method Start: handleAirJump(Lnet/minecraft/entity/player/EntityPlayer;)V
+      @|com\example\movement\handlers\MovementHandler.java|1122|1135|handleAirJump|method|com.example.movement.handlers.MovementHandler|handleAirJump|(Lnet/minecraft/entity/player/EntityPlayer;)V
+      @|com\example\movement\handlers\MovementHandler.java|1136|1148|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\example\movement\handlers\MovementHandler.java|1149|1155|player|param|com.example.movement.handlers.MovementHandler|handleAirJump|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+      @|com\example\movement\handlers\MovementHandler.java|1171|1182|MovementMod|class|com.example.movement.MovementMod
+      @|com\example\movement\handlers\MovementHandler.java|1183|1197|airJumpEnabled|field|com.example.movement.MovementMod|airJumpEnabled
+      @|com\example\movement\handlers\MovementHandler.java|1202|1208|player|param|com.example.movement.handlers.MovementHandler|handleAirJump|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+      @|com\example\movement\handlers\MovementHandler.java|1209|1217|onGround|field|net.minecraft.entity.Entity|onGround
+      @|com\example\movement\handlers\MovementHandler.java|1233|1239|player|param|com.example.movement.handlers.MovementHandler|handleAirJump|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+      @|com\example\movement\handlers\MovementHandler.java|1240|1247|motionY|field|net.minecraft.entity.Entity|motionY
+      @|com\example\movement\handlers\MovementHandler.java|1257|1268|MovementMod|class|com.example.movement.MovementMod
+      @|com\example\movement\handlers\MovementHandler.java|1269|1278|jumpBoost|field|com.example.movement.MovementMod|jumpBoost
+   Method End: handleAirJump(Lnet/minecraft/entity/player/EntityPlayer;)V
+   Method Start: onPlayerTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V
+      @|com\example\movement\handlers\MovementHandler.java|1333|1345|onPlayerTick|method|com.example.movement.handlers.MovementHandler|onPlayerTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V
+      @|com\example\movement\handlers\MovementHandler.java|1346|1361|PlayerTickEvent|class|net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent
+      @|com\example\movement\handlers\MovementHandler.java|1362|1367|event|param|com.example.movement.handlers.MovementHandler|onPlayerTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V|event|0
+      @|com\example\movement\handlers\MovementHandler.java|1379|1391|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\example\movement\handlers\MovementHandler.java|1401|1406|event|param|com.example.movement.handlers.MovementHandler|onPlayerTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V|event|0
+      @|com\example\movement\handlers\MovementHandler.java|1407|1413|player|field|net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent|player
+      @|com\example\movement\handlers\MovementHandler.java|1427|1432|event|param|com.example.movement.handlers.MovementHandler|onPlayerTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V|event|0
+      @|com\example\movement\handlers\MovementHandler.java|1433|1439|player|field|net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent|player
+      @|com\example\movement\handlers\MovementHandler.java|1453|1458|event|param|com.example.movement.handlers.MovementHandler|onPlayerTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V|event|0
+      @|com\example\movement\handlers\MovementHandler.java|1459|1465|player|field|net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent|player
+      @|com\example\movement\handlers\MovementHandler.java|1477|1489|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\example\movement\handlers\MovementHandler.java|1518|1530|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\example\movement\handlers\MovementHandler.java|1532|1537|event|param|com.example.movement.handlers.MovementHandler|onPlayerTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V|event|0
+      @|com\example\movement\handlers\MovementHandler.java|1538|1544|player|field|net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent|player
+      @|com\example\movement\handlers\MovementHandler.java|1558|1572|jumpTicksField|field|com.example.movement.handlers.MovementHandler|jumpTicksField
+      @|com\example\movement\handlers\MovementHandler.java|1618|1632|jumpTicksField|field|com.example.movement.handlers.MovementHandler|jumpTicksField
+      @|com\example\movement\handlers\MovementHandler.java|1633|1639|setInt|method|java.lang.reflect.Field|setInt|(Ljava/lang/Object;I)V
+      @|com\example\movement\handlers\MovementHandler.java|1683|1705|IllegalAccessException|class|java.lang.IllegalAccessException
+      @|com\example\movement\handlers\MovementHandler.java|1727|1733|System|class|java.lang.System
+      @|com\example\movement\handlers\MovementHandler.java|1734|1737|err|field|java.lang.System|err
+      @|com\example\movement\handlers\MovementHandler.java|1738|1745|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\example\movement\handlers\MovementHandler.java|1789|1804|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+      @|com\example\movement\handlers\MovementHandler.java|1872|1883|MovementMod|class|com.example.movement.MovementMod
+      @|com\example\movement\handlers\MovementHandler.java|1884|1896|speedEnabled|field|com.example.movement.MovementMod|speedEnabled
+      @|com\example\movement\handlers\MovementHandler.java|1907|1915|onGround|field|net.minecraft.entity.Entity|onGround
+      @|com\example\movement\handlers\MovementHandler.java|1951|1966|AntiCheatHelper|class|com.example.movement.utils.AntiCheatHelper
+      @|com\example\movement\handlers\MovementHandler.java|1967|1986|getRandomizedFactor|method|com.example.movement.utils.AntiCheatHelper|getRandomizedFactor|()F
+      @|com\example\movement\handlers\MovementHandler.java|2009|2016|motionX|field|net.minecraft.entity.Entity|motionX
+      @|com\example\movement\handlers\MovementHandler.java|2020|2031|MovementMod|class|com.example.movement.MovementMod
+      @|com\example\movement\handlers\MovementHandler.java|2032|2047|speedMultiplier|field|com.example.movement.MovementMod|speedMultiplier
+      @|com\example\movement\handlers\MovementHandler.java|2081|2088|motionZ|field|net.minecraft.entity.Entity|motionZ
+      @|com\example\movement\handlers\MovementHandler.java|2092|2103|MovementMod|class|com.example.movement.MovementMod
+      @|com\example\movement\handlers\MovementHandler.java|2104|2119|speedMultiplier|field|com.example.movement.MovementMod|speedMultiplier
+      @|com\example\movement\handlers\MovementHandler.java|2182|2193|MovementMod|class|com.example.movement.MovementMod
+      @|com\example\movement\handlers\MovementHandler.java|2194|2204|flyEnabled|field|com.example.movement.MovementMod|flyEnabled
+      @|com\example\movement\handlers\MovementHandler.java|2227|2239|capabilities|field|net.minecraft.entity.player.EntityPlayer|capabilities
+      @|com\example\movement\handlers\MovementHandler.java|2240|2251|allowFlying|field|net.minecraft.entity.player.PlayerCapabilities|allowFlying
+      @|com\example\movement\handlers\MovementHandler.java|2279|2291|capabilities|field|net.minecraft.entity.player.EntityPlayer|capabilities
+      @|com\example\movement\handlers\MovementHandler.java|2292|2300|isFlying|field|net.minecraft.entity.player.PlayerCapabilities|isFlying
+      @|com\example\movement\handlers\MovementHandler.java|2328|2340|fallDistance|field|net.minecraft.entity.Entity|fallDistance
+      @|com\example\movement\handlers\MovementHandler.java|2406|2418|ticksExisted|field|net.minecraft.entity.Entity|ticksExisted
+      @|com\example\movement\handlers\MovementHandler.java|2454|2461|motionY|field|net.minecraft.entity.Entity|motionY
+      @|com\example\movement\handlers\MovementHandler.java|2465|2480|AntiCheatHelper|class|com.example.movement.utils.AntiCheatHelper
+      @|com\example\movement\handlers\MovementHandler.java|2481|2497|getVerticalNoise|method|com.example.movement.utils.AntiCheatHelper|getVerticalNoise|()D
+      @|com\example\movement\handlers\MovementHandler.java|2585|2597|capabilities|field|net.minecraft.entity.player.EntityPlayer|capabilities
+      @|com\example\movement\handlers\MovementHandler.java|2598|2612|isCreativeMode|field|net.minecraft.entity.player.PlayerCapabilities|isCreativeMode
+      @|com\example\movement\handlers\MovementHandler.java|2639|2651|capabilities|field|net.minecraft.entity.player.EntityPlayer|capabilities
+      @|com\example\movement\handlers\MovementHandler.java|2652|2663|allowFlying|field|net.minecraft.entity.player.PlayerCapabilities|allowFlying
+      @|com\example\movement\handlers\MovementHandler.java|2696|2708|capabilities|field|net.minecraft.entity.player.EntityPlayer|capabilities
+      @|com\example\movement\handlers\MovementHandler.java|2709|2717|isFlying|field|net.minecraft.entity.player.PlayerCapabilities|isFlying
+      @|com\example\movement\handlers\MovementHandler.java|2763|2768|event|param|com.example.movement.handlers.MovementHandler|onPlayerTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V|event|0
+      @|com\example\movement\handlers\MovementHandler.java|2769|2775|player|field|net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent|player
+      @|com\example\movement\handlers\MovementHandler.java|2776|2784|worldObj|field|net.minecraft.entity.Entity|worldObj
+      @|com\example\movement\handlers\MovementHandler.java|2785|2793|isRemote|field|net.minecraft.world.World|isRemote
+      @|com\example\movement\handlers\MovementHandler.java|2809|2815|System|class|java.lang.System
+      @|com\example\movement\handlers\MovementHandler.java|2816|2819|out|field|java.lang.System|out
+      @|com\example\movement\handlers\MovementHandler.java|2820|2827|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\example\movement\handlers\MovementHandler.java|2850|2855|event|param|com.example.movement.handlers.MovementHandler|onPlayerTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V|event|0
+      @|com\example\movement\handlers\MovementHandler.java|2856|2862|player|field|net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent|player
+      @|com\example\movement\handlers\MovementHandler.java|2863|2867|posX|field|net.minecraft.entity.Entity|posX
+      @|com\example\movement\handlers\MovementHandler.java|2877|2882|event|param|com.example.movement.handlers.MovementHandler|onPlayerTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V|event|0
+      @|com\example\movement\handlers\MovementHandler.java|2883|2889|player|field|net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent|player
+      @|com\example\movement\handlers\MovementHandler.java|2890|2894|posY|field|net.minecraft.entity.Entity|posY
+      @|com\example\movement\handlers\MovementHandler.java|2904|2909|event|param|com.example.movement.handlers.MovementHandler|onPlayerTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V|event|0
+      @|com\example\movement\handlers\MovementHandler.java|2910|2916|player|field|net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent|player
+      @|com\example\movement\handlers\MovementHandler.java|2917|2921|posZ|field|net.minecraft.entity.Entity|posZ
+      @|com\example\movement\handlers\MovementHandler.java|2946|2960|jumpTicksField|field|com.example.movement.handlers.MovementHandler|jumpTicksField
+      @|com\example\movement\handlers\MovementHandler.java|3006|3020|jumpTicksField|field|com.example.movement.handlers.MovementHandler|jumpTicksField
+      @|com\example\movement\handlers\MovementHandler.java|3021|3027|setInt|method|java.lang.reflect.Field|setInt|(Ljava/lang/Object;I)V
+      @|com\example\movement\handlers\MovementHandler.java|3061|3083|IllegalAccessException|class|java.lang.IllegalAccessException
+      @|com\example\movement\handlers\MovementHandler.java|3107|3122|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+   Method End: onPlayerTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V
+   Method Start: onJump(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingJumpEvent;)V
+      @|com\example\movement\handlers\MovementHandler.java|3193|3199|onJump|method|com.example.movement.handlers.MovementHandler|onJump|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingJumpEvent;)V
+      @|com\example\movement\handlers\MovementHandler.java|3200|3215|LivingJumpEvent|class|net.minecraftforge.event.entity.living.LivingEvent.LivingJumpEvent
+      @|com\example\movement\handlers\MovementHandler.java|3216|3221|event|param|com.example.movement.handlers.MovementHandler|onJump|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingJumpEvent;)V|event|0
+      @|com\example\movement\handlers\MovementHandler.java|3237|3242|event|param|com.example.movement.handlers.MovementHandler|onJump|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingJumpEvent;)V|event|0
+      @|com\example\movement\handlers\MovementHandler.java|3243|3249|entity|field|net.minecraftforge.event.entity.EntityEvent|entity
+      @|com\example\movement\handlers\MovementHandler.java|3261|3273|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\example\movement\handlers\MovementHandler.java|3277|3288|MovementMod|class|com.example.movement.MovementMod
+      @|com\example\movement\handlers\MovementHandler.java|3289|3304|longJumpEnabled|field|com.example.movement.MovementMod|longJumpEnabled
+      @|com\example\movement\handlers\MovementHandler.java|3320|3325|event|param|com.example.movement.handlers.MovementHandler|onJump|(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingJumpEvent;)V|event|0
+      @|com\example\movement\handlers\MovementHandler.java|3326|3332|entity|field|net.minecraftforge.event.entity.EntityEvent|entity
+      @|com\example\movement\handlers\MovementHandler.java|3333|3340|motionY|field|net.minecraft.entity.Entity|motionY
+      @|com\example\movement\handlers\MovementHandler.java|3344|3355|MovementMod|class|com.example.movement.MovementMod
+      @|com\example\movement\handlers\MovementHandler.java|3356|3365|jumpBoost|field|com.example.movement.MovementMod|jumpBoost
+   Method End: onJump(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingJumpEvent;)V
+Class End  : com.example.movement.handlers.MovementHandler
+endProcessing com\example\movement\handlers\MovementHandler.java
+
+processing com\example\movement\utils\AntiCheatHelper.java
+@|com\example\movement\utils\AntiCheatHelper.java|8|34|com.example.movement.utils|package|com.example.movement.utils|(file)
+Class Start: com.example.movement.utils.AntiCheatHelper
+   @|com\example\movement\utils\AntiCheatHelper.java|158|164|Random|class|java.util.Random
+   @|com\example\movement\utils\AntiCheatHelper.java|165|171|random|field|com.example.movement.utils.AntiCheatHelper|random|
+   @|com\example\movement\utils\AntiCheatHelper.java|178|184|Random|class|java.util.Random
+   Method Start: getRandomizedFactor()F
+      @|com\example\movement\utils\AntiCheatHelper.java|239|258|getRandomizedFactor|method|com.example.movement.utils.AntiCheatHelper|getRandomizedFactor|()F
+      @|com\example\movement\utils\AntiCheatHelper.java|286|292|random|field|com.example.movement.utils.AntiCheatHelper|random
+      @|com\example\movement\utils\AntiCheatHelper.java|293|302|nextFloat|method|java.util.Random|nextFloat|()F
+   Method End: getRandomizedFactor()F
+   Method Start: getVerticalNoise()D
+      @|com\example\movement\utils\AntiCheatHelper.java|377|393|getVerticalNoise|method|com.example.movement.utils.AntiCheatHelper|getVerticalNoise|()D
+      @|com\example\movement\utils\AntiCheatHelper.java|414|420|random|field|com.example.movement.utils.AntiCheatHelper|random
+      @|com\example\movement\utils\AntiCheatHelper.java|421|431|nextDouble|method|java.util.Random|nextDouble|()D
+   Method End: getVerticalNoise()D
+   Method Start: getPositionOffset()[D
+      @|com\example\movement\utils\AntiCheatHelper.java|501|518|getPositionOffset|method|com.example.movement.utils.AntiCheatHelper|getPositionOffset|()[D
+      @|com\example\movement\utils\AntiCheatHelper.java|566|572|random|field|com.example.movement.utils.AntiCheatHelper|random
+      @|com\example\movement\utils\AntiCheatHelper.java|573|583|nextDouble|method|java.util.Random|nextDouble|()D
+      @|com\example\movement\utils\AntiCheatHelper.java|629|635|random|field|com.example.movement.utils.AntiCheatHelper|random
+      @|com\example\movement\utils\AntiCheatHelper.java|636|646|nextDouble|method|java.util.Random|nextDouble|()D
+   Method End: getPositionOffset()[D
+Class End  : com.example.movement.utils.AntiCheatHelper
+endProcessing com\example\movement\utils\AntiCheatHelper.java
+

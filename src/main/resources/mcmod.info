@@ -1,0 +1,11 @@
+[
+  {
+    "modid": "movement",
+    "name": "Movement Mod",
+    "description": "Adds enhanced movement features",
+    "version": "1.0",
+    "mcversion": "1.8.9",
+    "authorList": ["TTHILLTT"],
+    "credits": "Thanks to Forge team"
+  }
+]
